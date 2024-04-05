@@ -1,0 +1,519 @@
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+   
+           h1{
+               padding: 230px 0;
+               color: #3eca3e;
+               font-family: 'Minecraft', sans-serif;
+               font-size: 50px;
+           }
+           body{background-color:#083608;}
+       
+           #start_b{
+               font-family: 'MinecraftiaRegular';
+               border: 4px ;
+               border-radius: 5px;
+               color: #3eca3e;
+               background-color: black;
+               display: inline-block;
+               font-size: large;
+               margin: 0;
+               position: absolute;
+               top: 55%;
+               left: 44%;
+               -ms-transform: translate(-50%, -50%);
+               transform: translate(-50%, -50%);
+               opacity:1;
+               transition: 0.3s;
+               cursor: pointer;
+               
+           }
+               
+           #stop_b{
+               font-family: 'MinecraftiaRegular';
+               border: 4px ;
+               border-radius: 5px;
+               color: #3eca3e;
+               background-color: black;
+               display: inline-block;
+               font-size: large;
+               margin: 0;
+               position: absolute;
+               top: 55%;
+               left: 50%;
+               -ms-transform: translate(-50%, -50%);
+               transform: translate(-50%, -50%);
+               opacity:1;
+               transition: 0.3s;
+               cursor: pointer;
+           }
+        
+           #plum{
+               display: none;
+               position: absolute;
+               top: 5px;
+               bottom: 5px;
+               right: 5px;
+               left: 5px;
+               height: 250;
+               width: 200;      
+           }
+
+           #rose{
+               display: none;
+               position: absolute;
+               top: 20px;
+               bottom: 5px;
+               right: 250px;
+               left: 250px;
+               height: 150;
+               width: 150;
+           }
+
+           #lily{
+               display: none;
+               position: absolute;
+               top: 30px;
+               bottom: 5px;
+               right: 500px;
+               left: 500px;
+               height: 150;
+               width: 150;
+           }
+
+           #daisy{
+               display: none;
+               position: absolute;
+               top: 30px;
+               bottom: 5px;
+               right: 730px;
+               left: 730px;
+               height: 150;
+               width: 150;
+           }
+
+           #peony{
+               display: none;
+               position: absolute;
+               top: 30px;
+               bottom: 5px;
+               right: 930px;
+               left: 930px;
+               height: 150;
+               width: 150;
+           }
+
+           #tulip{
+               display: none;
+               position: absolute;
+               top: 30px;
+               bottom: 5px;
+               right: 1130px;
+               left: 1120px;
+               height: 150;
+               width: 150;
+               rotate: 2deg;
+           }
+
+           #jas{
+               display: none;
+               position: absolute;
+               top: 300px;
+               bottom: 50px;
+               right: 2050px;
+               left: 1050px;
+               height: 150;
+               width: 150;
+               
+           }
+
+           #lav{
+               display: none;
+               position: relative;
+               top: -200px;
+               bottom: 50px;
+               right: 250px;
+               left: 250px;
+               height: 170;
+               width: 170;
+               
+           }
+
+           #mari{
+               display: none;
+               position: absolute;
+               top: 380px;
+               bottom: 50px;
+               right: 500px;
+               left: 500px;
+               height: 150;
+               width: 170;
+               
+           }
+
+           #sun{
+               display: none;
+               position: absolute;
+               top: 380px;
+               bottom: 50px;
+               right: 800px;
+               left: 800px;
+               height: 150;
+               width: 150;
+               
+           }
+
+           #hibi{
+               display: none;
+               position: absolute;
+               top: 300px;
+               bottom: 5px;
+               right: 5px;
+               left: 5px;
+               height: 150;
+               width: 150;
+               
+           }
+
+           #hide {
+
+             display: none;
+             position: absolute;
+             top: 120px;
+             bottom: 5px;
+             right: 5px;
+             left: 40px;
+             font-size: 15px;
+             font-family: 'MinecraftiaRegular';
+                 }
+
+           #plum_1:hover + #hide {
+             display: block;
+             color: goldenrod;
+                               }
+
+            #hide_2 {
+
+            display: none;
+            position: absolute;
+            top: 90px;
+            bottom: 5px;
+            right: 60px;
+            left: 200px;
+            font-size: 15px;
+            font-family: 'MinecraftiaRegular';
+                }
+
+            #rose_2:hover + #hide_2 
+                {
+            display: block;
+            color:#dc4040;
+                }
+
+            #hide_3 {
+
+              display: none;
+              position: absolute;
+              top: 90px;
+              bottom: 5px;
+              right: 60px;
+              left: 480px;
+              font-size: 15px;
+              font-family: 'MinecraftiaRegular';
+                        }
+
+            #lily_3:hover + #hide_3 {
+            display: block;
+            color:#40ccdc;
+                       }
+
+            #hide_4 {
+              display: none;
+              position: absolute;
+              top:90px;
+              bottom:90px;
+              right:60px;
+              left: 720px;
+              font-size:15px;
+              font-family: 'MinecraftiaRegular';
+            }           
+
+            #daisy_4:hover + #hide_4 {
+                display: block;
+                color: yellow
+            }
+
+            #hide_5 {
+              display: none;
+              position: absolute;
+              top:90px;
+              bottom:90px;
+              right:60px;
+              left: 920px;
+              font-size:15px;
+              font-family: 'MinecraftiaRegular';
+            }           
+
+            #peony_5:hover + #hide_5 {
+                display: block;
+                color: rgb(255, 0, 119)
+            }
+      
+            #hide_6 {
+              display: none;
+              position: absolute;
+              top:90px;
+              bottom:90px;
+              right:60px;
+              left: 1120px;
+              font-size:15px;
+              font-family: 'MinecraftiaRegular';
+            }           
+
+            #tulip_6:hover + #hide_6 {
+                display: block;
+                color: rgb(255, 149, 0)
+            }
+
+            #hide_7 {
+              display: none;
+              position: absolute;
+              top: 350px;
+              bottom: 150px;
+              right:110px;
+              left: 1100px;
+              font-size:15px;
+              font-family: 'MinecraftiaRegular';
+            }           
+
+            #jas_7:hover + #hide_7 {
+                display: block;
+                color: rgb(255, 255, 255)
+            }
+
+            #hide_9 {
+              display: none;
+              position: absolute;
+              top: 450px;
+              bottom:100px;
+              right:60px;
+              left: 790px;
+              font-size:15px;
+              font-family: 'MinecraftiaRegular';
+            }           
+
+            #sun_9:hover + #hide_9 {
+                display: block;
+                color: rgb(242, 255, 0)
+            }
+
+            #hide_8 {
+              display: none;
+              position: absolute;
+              top: 450px;
+              bottom:100px;
+              right:60px;
+              left: 520px;
+              font-size:15px;
+              font-family: 'MinecraftiaRegular';
+            }           
+
+            #mari_8:hover + #hide_8 {
+                display: block;
+                color: rgb(215, 29, 29)
+            }
+
+             #hide_10 {
+                display: none;
+                position: absolute;
+                top: 450px;
+                bottom:110px;
+                right:60px;
+                left:300px;
+                font-size: 15px;
+                font-family: 'MinecraftiaRegular';
+             }
+
+             #lav_10:hover + #hide_10 {
+                display: block;
+                color: rgb(190, 132, 216)
+             }
+             #hide_11 {
+                display: none;
+                position: absolute;
+                top: 360px;
+                bottom:400px;
+                right:60px;
+                left:50px;
+                font-size: 15px;
+                font-family: 'MinecraftiaRegular';
+             }
+
+             #hibi_11:hover + #hide_11 {
+                display: block;
+                color: rgb(43, 135, 255)
+             }
+      
+      
+         #plum_1:hover {
+            display: none;
+         }
+
+         #rose_2:hover {
+            display: none;
+         }
+
+         #lily_3:hover {
+            display: none;
+         }
+
+         #daisy_4:hover {
+            display:none;
+         }
+
+         #peony_5:hover {
+            display:none;
+         }
+
+         #tulip_6:hover {
+            display:none;
+         }
+
+         #jas_7:hover {
+            display:none;
+         }
+
+         #sun_9:hover {
+            display:none;
+         }
+
+         #mari_8:hover {
+            display:none;
+         }
+
+         #lav_10:hover {
+            display:none;
+         }
+
+         #hibi_11:hover {
+            display:none;
+         }
+
+
+       
+       #start_b:hover {opacity: 0.6;}
+       #stop_b:hover{opacity: 0.6;}
+       </style>
+
+        <h1> <center>Fati's Flower 
+            Dictionary</center></h1>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css"/>
+    </head>
+
+    <body>
+        <button onclick="showflowers()" id="start_b">start</button>
+        <button onclick="hideflowers()"  id="stop_b">stop</button>
+       
+
+        <div id="plum_1">
+            <img id="plum" src="plumeria.png">
+        </div>
+
+        <div id="hide">a new beginning</div>
+
+        <div id="rose_2">
+            <img id="rose" src="rose.png" >
+        </div>    
+        
+        <div id="hide_2">gratitude and admiration</div>
+        
+        <div id="lily_3">
+            <img id="lily" src="lily.png" >
+        </div>
+
+        <div id="hide_3">purity and fertility</div>
+
+        <div id="daisy_4">
+            <img id="daisy" src="daisy.png" >
+        </div>
+
+        <div id="hide_4">joy and chastity</div>
+        
+        <div id="peony_5">
+            <img id="peony" src="peony.png" >
+        </div>
+
+        <div id="hide_5">a happy marriage</div>
+       
+        <div id="tulip_6">
+            <img id="tulip" src="tulip.png" >
+        </div>
+        
+        <div id="hide_6">friendship and appreciation</div>
+
+        <div id="jas_7">
+            <img id="jas" src="jasmine.png" >
+        </div>
+        <div id="hide_7">humility and grace</div>
+       
+        <div id="mari_8">
+            <img id="mari" src="mari.png" >
+        </div>
+        <div id="hide_8">death & mourning</div>
+
+        <div id="sun_9">
+            <img id="sun" src="sun.png" >
+        </div>
+        <div id="hide_9">faith and devotion</div>
+        
+        <div id="lav_10">
+            <img id="lav" src="lavender.png" >
+        </div>
+        <div id="hide_10">serenity and grace</div>
+        
+        <div id="hibi_11">
+            <img id="hibi" src="hibi.png" >
+        </div>
+        <div id="hide_11">young love</div>
+      
+
+
+    </body>
+    
+<script>
+    function showflowers(){
+        document.getElementById('plum').style.display= "block";
+        document.getElementById('rose').style.display= "block";
+        document.getElementById('lily').style.display= "block";
+        document.getElementById('daisy').style.display= "block";
+        document.getElementById('peony').style.display= "block";
+        document.getElementById('tulip').style.display= "block";
+        document.getElementById('jas').style.display= "block";
+        document.getElementById('mari').style.display= "block";
+        document.getElementById('sun').style.display= "block";
+        document.getElementById('lav').style.display= "block";
+        document.getElementById('hibi').style.display= "block";
+        
+    }
+
+    function hideflowers(){
+        document.getElementById('plum').style.display= "none";
+        document.getElementById('rose').style.display= "none";
+        document.getElementById('lily').style.display= "none";
+        document.getElementById('daisy').style.display= "none";
+        document.getElementById('peony').style.display= "none";
+        document.getElementById('tulip').style.display= "none";
+        document.getElementById('jas').style.display= "none";
+        document.getElementById('mari').style.display= "none";
+        document.getElementById("sun").style.display= "none";
+        document.getElementById('lav').style.display= "none";
+        document.getElementById('hibi').style.display= "none";
+
+
+    }
+
+    
+</script>
+</html>
